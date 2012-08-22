@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello World!
+title: Jorge Ramírez
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
