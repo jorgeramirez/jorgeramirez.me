@@ -2,7 +2,7 @@
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title 
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "CNAME"]
 auto: true
 pygments: true
 
@@ -10,7 +10,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Jorge Ramírez
-tagline: Site Tagline
+tagline: false
 author :
   name : Jorge Ramírez
   email : jorgeramirez1990@gmail.com
@@ -70,7 +70,7 @@ JB :
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change theme here if needed.
   #
-  archive_path: /archive.html
+  archive_path: /archive
   categories_path : /categories.html
   tags_path : /tags.html
 
