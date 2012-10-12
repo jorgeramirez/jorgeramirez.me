@@ -7,7 +7,7 @@ title: Jorge Ramirez
 <div class="hero-unit">
   <h1>Jorge Ram&iacute;rez</h1>
   <p>
-    Welcome to my personal website!. Here you will find the Open Source projects I have
+    Welcome to my personal website! Here you will find the Open Source projects I have
     built, and also my blog.
   </p>
   <ul class="socialicons bw" style="float: right;">
@@ -20,16 +20,42 @@ title: Jorge Ramirez
   </ul>
 </div>
 
-<h3 style="padding-top: 0.5em; margin-bottom: 0.5em;">
+
+<h2 style="padding-top: 0.5em; margin-bottom: 0.5em;">
+  Projects
+  <a href="/projects" class="view-more">view all projects</a>
+</h2>
+<div id="projects"></div>
+
+
+<h2 style="padding-top: 0.5em; margin-bottom: 0.5em;">
   Recent Posts
   <a href="/blog" class="view-more">view all posts</a>
-</h3>
-<ul class="posts">
-    
-    {% for post in site.posts limit 5 %}
-    <li>
-        <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-        <time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
-    </li>
-    {% endfor %}
-<ul>
+</h2>
+<ul class="posts">  
+  {% for post in site.posts limit 5 %}
+  <li>
+      <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+      <time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
+  </li>
+  {% endfor %}
+</ul>
+
+
+<script type="text/template" id="projects-template">
+  <div class="row projects">
+      <% _.forEach( projects.splice( 0, 5 ), function( proj ) { %>
+          <% var forked = !!proj.fork ? "Fork" : ""; %>  
+        <div class="span4">
+          <h3>
+            <a href="<%= proj.clone_url  %>" target="_blank"> <%= proj.name %> </a>
+            <span class="fork"> <%= forked %></span>
+          </h3>
+          <p class="description"> <%= proj.description %></p>
+          <p class="updated-at">
+            <time datetime="<%= proj.updated_at %>"> Last updated <%= moment( proj.updated_at ).fromNow() %> </time>
+          </p>
+        </div>
+      <% }); %>
+  </div>
+</script>

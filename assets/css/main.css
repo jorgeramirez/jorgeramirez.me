@@ -25,3 +25,23 @@ a.view-more {
 .hero-unit p {
   padding-top: 1em;
 }
+
+.projects p.description {
+  color: #444;
+  font-size: 15px;
+}
+
+.projects p.updated-at {
+  margin: 0;
+  padding: 0;
+  color: #888;
+  font-size: 11px;
+}
+
+span.fork {
+  color: #888;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 5px;
+}

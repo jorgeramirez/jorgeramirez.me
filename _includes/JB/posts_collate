@@ -14,7 +14,9 @@ Usage:
         => 'for post in site.posts reversed'
       2) Next make sure to change 'post.previous.date' to:
         => 'post.next.date'
-        
+
+Modified by Jorge Ramirez <jorgeramirez1990@gmail.com>
+
 -->{% endcomment %}
 
 {% if site.JB.posts_collate.provider == "custom" %}
