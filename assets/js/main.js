@@ -4,10 +4,10 @@
   'use strict';
 
   // renders projects list if possible.
-  function renderProjects( data ) {
-
+  function renderProjects( response ) {
+    
     var projectsTpl = _.template( $( '#projects-template' ).html(), {
-      projects: data
+      projects: response.data
     });
 
     $( '#projects' ).append( projectsTpl );
@@ -16,9 +16,9 @@
   // load the projects
   $(function () {
     $.ajax({
-      url: 'https://api.github.com/users/jorgeramirez/repos?type=owner&sort=pushed',
+      url: 'https://api.github.com/users/jorgeramirez/repos?type=owner&sort=pushedi?callback',
       type: 'GET',
-      dataType: 'json',
+      dataType: 'jsonp',
       localCache: true,
       cacheTTL: 24,
       cacheKey: 'projects',
