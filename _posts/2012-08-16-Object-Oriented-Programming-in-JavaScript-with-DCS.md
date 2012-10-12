@@ -24,7 +24,7 @@ mechanism implemented by John Resig and is also a bit influenced by the class sy
 
 Here is an example of what you can do with DCS:
 
-**Person**
+Define the Class **Person**
 
 {% highlight js %}
 DCS.define('Person', { 
