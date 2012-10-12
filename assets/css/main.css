@@ -1,0 +1,27 @@
+.posts {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.posts li {
+  border-bottom: 1px solid #DDD;
+  padding: 3px 0 2px 0;
+}
+
+.posts li time {
+  float: right;
+  padding-right: 1px;
+}
+
+time {
+  color: grey;
+}
+
+a.view-more {
+  float: right;
+  font-size: 12px;
+}
+
+.hero-unit p {
+  padding-top: 1em;
+}
