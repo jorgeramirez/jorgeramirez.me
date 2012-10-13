@@ -26,7 +26,7 @@ group: navigation
             </h3>
             <p class="description"> <%= proj.description %></p>
             <p class="updated-at">
-              <time datetime="<%= proj.pushed_at %>"> Last updated <%= moment( proj.pushed_at, 'YYYY-MM-DDTHH:mm:ss z' ).fromNow() %> </time>
+              <time datetime="<%= proj.pushed_at %>"> Last updated <%= moment( proj.pushed_at, 'YYYY-MM-DDTHH:mm:ss Z' ).fromNow() %> </time>
             </p>
           </div>
         </div>
