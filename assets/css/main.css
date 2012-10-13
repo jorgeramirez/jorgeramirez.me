@@ -8,6 +8,10 @@
   padding: 3px 0 2px 0;
 }
 
+.posts li a {
+  font-size: 15px;
+}
+
 .posts li time {
   float: right;
   padding-right: 1px;
@@ -26,12 +30,17 @@ a.view-more {
   padding-top: 1em;
 }
 
-.projects p.description {
+.project {
+  height: 150px;
+  padding: 5px;
+}
+
+.project p.description {
   color: #444;
   font-size: 15px;
 }
 
-.projects p.updated-at {
+.project p.updated-at {
   margin: 0;
   padding: 0;
   color: #888;
@@ -45,6 +54,7 @@ span.fork {
   font-weight: bold;
   margin-left: 5px;
 }
+
 
 #loading {
   border: 2px solid #888;

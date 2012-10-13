@@ -3,11 +3,14 @@
 (function( window, $, _ ) {
   'use strict';
 
-  // renders projects list if possible.
+  // renders the project list.
   function renderProjects( response ) {
-    
+    var projects = _.sortBy( response.data , function( project ) {
+      return project.pushed_at;
+    });
+
     var projectsTpl = _.template( $( '#projects-template' ).html(), {
-      projects: response.data
+      projects: projects.reverse()
     });
 
     $( '#loading' ).fadeOut( 400, function() {

@@ -6,23 +6,29 @@ group: navigation
 ---
 {% include JB/setup %}
 
+<p style="font-size: 15px;">
+  This is a list of the Open Source projects I have created/forked.
+</p>
+
 {% assign component = 'Projects' %}
 {% include loading.html %}
 <div id="projects"></div>
 
 <script type="text/template" id="projects-template">
-  <div class="row projects">
+  <div class="row">
       <% _.forEach( projects, function( proj ) { %>
           <% var forked = !!proj.fork ? "Fork" : ""; %>  
-        <div class="span6" style="border-bottom: 1px solid #DDD;">
-          <h3>
-            <a href="<%= proj.clone_url  %>" target="_blank"> <%= proj.name %> </a>
-            <span class="fork"> <%= forked %></span>
-          </h3>
-          <p class="description"> <%= proj.description %></p>
-          <p class="updated-at">
-            <time datetime="<%= proj.updated_at %>"> Last updated <%= moment( proj.updated_at ).fromNow() %> </time>
-          </p>
+        <div class="span4">
+          <div class="project">
+            <h3>
+              <a href="<%= proj.clone_url  %>" target="_blank"> <%= proj.name %> </a>
+              <span class="fork"> <%= forked %></span>
+            </h3>
+            <p class="description"> <%= proj.description %></p>
+            <p class="updated-at">
+              <time datetime="<%= proj.pushed_at %>"> Last updated <%= moment( proj.pushed_at, 'YYYY-MM-DDTHH:mm:ss z' ).fromNow() %> </time>
+            </p>
+          </div>
         </div>
       <% }); %>
   </div>
