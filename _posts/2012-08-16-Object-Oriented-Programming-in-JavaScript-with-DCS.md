@@ -4,7 +4,8 @@ title: Object Oriented Programming in JavaScript with DCS
 date: 2012-08-16 14:05:37 UTC
 updated: 2012-08-16 14:05:37 UTC
 comments: false
-categories: 
+categories: [ javascript ] 
+tags: [ javascript, OOP ]
 ---
 
 In the process of learning JavaScript there always comes a point when you really want to implement

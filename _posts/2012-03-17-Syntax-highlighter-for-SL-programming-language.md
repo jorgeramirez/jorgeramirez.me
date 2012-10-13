@@ -4,7 +4,8 @@ title: Syntax highlighter for SL programming language
 date: 2012-03-17 22:13:14 UTC
 updated: 2012-03-17 22:13:14 UTC
 comments: false
-categories: 
+categories: [ highlighting ] 
+tags: [ syntax-highlighting ]
 ---
 
 A few days ago [Eliseo Ocampos](https://github.com/roskoff) posted on Google plus

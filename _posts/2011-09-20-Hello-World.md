@@ -4,7 +4,8 @@ title: Hello World
 date: 2011-09-20 04:43:52 UTC
 updated: 2011-09-20 04:43:52 UTC
 comments: false
-categories: 
+categories:
+tags: [ hello-world ]
 ---
 
 I am _Jorge Ramírez_ from Villa Elisa Paraguay. I am majoring in computer science engineering at UNA.
