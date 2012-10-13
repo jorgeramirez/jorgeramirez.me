@@ -26,6 +26,32 @@ a.view-more {
   font-size: 12px;
 }
 
+.ulno {
+  display: inline-block;
+  list-style: none;
+}
+
+.ulno li {
+  display: inline-block;
+}
+
+.post-share { 
+  margin:4px auto 2.2%;
+  text-align:center;
+  width:100%;
+  padding:9px 0 5px;
+  border-top:1px dotted #d5d5d5;
+  border-bottom:1px dotted #d5d5d5;
+  border-radius:0 0 3px 3px;
+}
+
+.post-share li{
+  vertical-align:top;
+}
+.post-share .fb{
+  margin-right:4%
+}
+
 .hero-unit p {
   padding-top: 1em;
 }

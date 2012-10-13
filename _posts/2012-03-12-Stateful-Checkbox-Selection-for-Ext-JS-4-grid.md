@@ -3,7 +3,8 @@ layout: post
 title: Stateful Checkbox Selection for Ext JS 4 grid
 date: 2012-03-12 02:59:50 UTC
 updated: 2012-03-12 02:59:50 UTC
-comments: false
+comments: true
+sharing: true
 categories: [ javascript ]
 tags: [ extjs, javascript ]
 ---

@@ -3,7 +3,8 @@ layout: post
 title: Syntax highlighter for SL programming language
 date: 2012-03-17 22:13:14 UTC
 updated: 2012-03-17 22:13:14 UTC
-comments: false
+comments: true
+sharing: true
 categories: [ highlighting ] 
 tags: [ syntax-highlighting ]
 ---

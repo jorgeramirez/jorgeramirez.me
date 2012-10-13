@@ -3,7 +3,8 @@ layout: post
 title: Hello World
 date: 2011-09-20 04:43:52 UTC
 updated: 2011-09-20 04:43:52 UTC
-comments: false
+comments: true
+sharing: true
 categories:
 tags: [ hello-world ]
 ---
