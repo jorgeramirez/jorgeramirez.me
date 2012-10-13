@@ -10,7 +10,9 @@
       projects: response.data
     });
 
-    $( '#projects' ).append( projectsTpl );
+    $( '#loading' ).fadeOut( 400, function() {
+      $( '#projects' ).append( projectsTpl );
+    });
   }
 
   // load the projects

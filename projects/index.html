@@ -6,6 +6,8 @@ group: navigation
 ---
 {% include JB/setup %}
 
+{% assign component = 'Projects' %}
+{% include loading.html %}
 <div id="projects"></div>
 
 <script type="text/template" id="projects-template">
@@ -25,3 +27,5 @@ group: navigation
       <% }); %>
   </div>
 </script>
+
+<script type="text/javascript" src="/assets/js/list-projects.js"></script>

@@ -25,6 +25,9 @@ title: Jorge Ramirez
   Projects
   <a href="/projects" class="view-more">view all projects</a>
 </h2>
+
+{% assign component = 'Projects' %}
+{% include loading.html %}
 <div id="projects"></div>
 
 
@@ -59,3 +62,5 @@ title: Jorge Ramirez
       <% }); %>
   </div>
 </script>
+
+<script type="text/javascript" src="/assets/js/list-projects.js"></script>
