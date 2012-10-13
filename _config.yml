@@ -16,7 +16,7 @@ author :
   email : jorgeramirez1990@gmail.com
   github : jorgeramirez
   twitter : jorgeramirez_90
-  feedburner : feedname
+  feedburner : http://feeds.feedburner.com/jramirezme
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -26,7 +26,7 @@ author :
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://jorgeramirez.github.com
+production_url : http://jramirez.me
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -123,4 +123,5 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  
+  posts_collate:
+    provider: "custom"
