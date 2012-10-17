@@ -5,7 +5,12 @@
 
   // renders the project list.
   function renderProjects( response ) {
-    var projects = _.sortBy( response.data , function( project ) {
+
+    var projects = _.filter( response.data, function( project ) {
+      return !project.fork;
+    });
+    
+    projects = _.sortBy( projects , function( project ) {
       return project.pushed_at;
     });
 
