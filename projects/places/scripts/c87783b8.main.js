@@ -110,7 +110,13 @@ window.places = {
         appId: '306294449486120'
       });
 
-      session.user = new FacebookUser();
+      session.user = new FacebookUser(null, {
+        scope: [ 'email' ],
+        status: true,
+        cookie: true,
+        xfbml : true,
+        oauth : true
+      });
       
       session.user.on('facebook:unauthorized', function(model, response) {
         me.beforeLogin();
