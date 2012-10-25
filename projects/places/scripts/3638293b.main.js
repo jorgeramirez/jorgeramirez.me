@@ -5,6 +5,7 @@ window.places = {
   Collections: {},
   Views: {},
   Routers: {},
+  AuthData: {}, // auth information
   
   renderMainPage: function() {
     
@@ -63,6 +64,40 @@ window.places = {
     }
   },
 
+  //log in to ComeAlong
+  loginComeAlong : function() {
+    var me = this;
+ 
+    function success( auth ) {
+      console.log( "logged into comealong" );
+      console.log( auth );
+      
+      // Finally render the Main Page!
+      $( '#app' ).show();
+      me.renderMainPage();
+    }
+    
+    function error() {
+      console.log( "comealong login error" );
+      console.log( arguments );
+    }
+
+    $.ajax({
+      type: 'POST',
+      url: places.serverUrl + '/um/session',
+      data: JSON.stringify({
+        name: "facebook", 
+        authString: places.AuthData.accessToken
+      }),
+      dataType: 'json',
+      contentType: 'application/json; charset=utf-8',
+      crossDomain: true,
+      success: success,
+      error: error 
+    });
+  
+  },
+
   init: function() {
     var me = this;
 
@@ -82,8 +117,12 @@ window.places = {
       });
 
       session.user.on('facebook:connected', function(model, response) {
-        $( '#app' ).show();
-        me.renderMainPage();
+        
+        //capture auth response data
+        places.AuthData = response.authResponse;
+
+        //init session in comealong
+        me.loginComeAlong();
       });
 
       session.user.on('facebook:disconnected', function(model, response) {
@@ -112,31 +151,5 @@ window.places = {
 
 $(document).ready(function(){
   places.init();
-  
-  // fake session init
-  //$.ajax({
-    //type: 'POST',
-    //url: places.serverUrl + '/um/session',
-    //data: JSON.stringify({}),
-    //dataType: 'json',
-    //contentType: 'application/json; charset=utf-8',
-    //crossDomain: true,
-  
-    //success: function ( auth ) {
-      //console.log( "success" );
-      //console.log( auth );
-
-      ////setup loggin data
-      ////places.sessionid = auth.id;
-
-      //// init main view
-      //places.init();
-    //},
-    
-    //error: function () {
-      //console.log( "error" );
-      //console.log( arguments );
-    //}
-  //});
 });
 
