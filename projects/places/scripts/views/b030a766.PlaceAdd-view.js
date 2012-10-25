@@ -8,6 +8,8 @@ places.Views.PlaceAdd = Backbone.View.extend({
   addNewPlace: function( e ) {
     var me = this,
         elements = me.$el.find("form")[0].elements;
+    
+    console.log("add place");
 
     e.preventDefault();
    

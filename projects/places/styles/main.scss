@@ -1,5 +1,26 @@
 @import "compass_twitter_bootstrap";
 
+body {
+    color: #444;
+    background: #F2F2F3;
+}
+
+.container > hr { 
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    line-height: 40px;
+    border: 0;
+    border-top: 1px dashed #CCC;
+    border-bottom: 1px dashed white;
+}
+
+.container > h1 {
+    font-size: 50px;
+    line-height: 1;
+    font-weight: bold;
+}
+
 
 #place-add {
     margin-top: 10px;
@@ -10,6 +31,7 @@
         
         .map-canvas {
             height: 200px;
+            border: 1px solid #DDD;
         }
 
         #geocomplete {
@@ -31,14 +53,6 @@
 
 }
 
-.container > hr { 
-    width: 100%;
-    padding: 0;
-    margin-bottom: 20px;
-    line-height: 40px;
-    border: 0;
-    border-bottom: 1px solid #E5E5E5;
-}
 
 #loading {
     border: 2px solid #888;
