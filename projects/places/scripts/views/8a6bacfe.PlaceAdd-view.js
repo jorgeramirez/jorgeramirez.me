@@ -1,5 +1,5 @@
 places.Views.PlaceAdd = Backbone.View.extend({
-  el: 'div.place-add',
+  el: '#place-add',
 
   events: {
     'click #place-add button' : 'addNewPlace'
@@ -11,6 +11,15 @@ places.Views.PlaceAdd = Backbone.View.extend({
     
     console.log("add place");
 
+    console.log({
+      name: elements.name.value,
+      address: elements.formatted_address.value,
+      city: elements.locality.value,
+      country: elements.country.value,
+      latitude: elements.lat.value,
+      longitude: elements.lng.value
+    });
+    
     e.preventDefault();
    
     //$.ajax({
