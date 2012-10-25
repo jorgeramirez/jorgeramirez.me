@@ -1,6 +1,7 @@
 
 window.places = {
-  serverUrl: 'http://190.104.153.121/proxy/proxy.php?proxy_url=http://comealong.me/CAE_API',
+  //serverUrl: 'http://190.104.153.121/proxy/proxy.php?proxy_url=http://comealong.me/CAE_API',
+  serverUrl: 'http://190.104.153.121/simple-proxy.php?url=http://comealong.me/CAE_API',
   Models: {},
   Collections: {},
   Views: {},
