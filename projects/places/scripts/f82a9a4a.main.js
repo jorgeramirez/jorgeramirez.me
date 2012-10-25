@@ -17,7 +17,7 @@ window.places = {
     places.Places = new places.Collections.PlacesCollection();
 
     // instantiate PlaceAdd view
-    places.PlaceAddView = places.Views.PlaceAdd();
+    places.PlaceAddView = new places.Views.PlaceAdd();
 
     // places table
 
