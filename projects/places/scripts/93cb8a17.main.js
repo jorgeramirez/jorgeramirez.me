@@ -1,12 +1,13 @@
 
 window.places = {
-  //serverUrl: 'http://190.104.153.121/proxy/proxy.php?proxy_url=http://comealong.me/CAE_API',
-  serverUrl: 'http://190.104.153.121/simple-proxy.php?url=http://comealong.me/CAE_API',
+  //serverUrl: 'http://localhost/proxy/proxy.php?proxy_url=http://comealong.me/CAE_API',
+  serverUrl: 'http://190.104.153.121/proxy/proxy.php?proxy_url=http://comealong.me/CAE_API',
   Models: {},
   Collections: {},
   Views: {},
   Routers: {},
   AuthData: {}, // auth information
+  ComeAlongAuth: {}, // auth information returned by CAE_API
   
   renderMainPage: function() {
     
@@ -71,7 +72,7 @@ window.places = {
  
     function success( auth ) {
       console.log( "logged into comealong" );
-      console.log( auth );
+      places.ComeAlongAuth = auth;
       
       // Finally render the Main Page!
       $( '#app' ).show();
@@ -107,15 +108,15 @@ window.places = {
 
     window.fbAsyncInit = function() {
       FB.init({
-        appId: '306294449486120'
-      });
-
-      session.user = new FacebookUser(null, {
-        scope: [ 'email' ],
+        appId: '324379017618565',
         status: true,
         cookie: true,
         xfbml : true,
         oauth : true
+      });
+
+      session.user = new FacebookUser(null, {
+        scope: [ 'email' ]
       });
       
       session.user.on('facebook:unauthorized', function(model, response) {

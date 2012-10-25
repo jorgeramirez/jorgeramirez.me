@@ -5,7 +5,7 @@ places.Models.PlaceModel = Backbone.Model.extend({
     address: '',
     city: '',
     country: '',
-    latitue: 0,
+    latitude: 0,
     longitude: 0
   }
 });
