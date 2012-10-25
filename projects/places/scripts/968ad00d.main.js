@@ -31,7 +31,7 @@ window.places = {
         $( '#places-table' ).append( placesListTpl );
 
         // setup listjs in order to do filtering
-        places.lists.Places = new List( 'places-table' , {
+        places.PlacesList = new List( 'places-table' , {
           valueNames: [ 'name', 'address', 'city', 'country' ]
         });
       });
@@ -54,8 +54,9 @@ window.places = {
 
   // resets to do before login
   beforeLogin: function() {
-      $( '#app' ).hide();
-      $( '#places-table' ).children().remove();
+    $( '#app' ).hide();
+    $( '#places-table' ).children().remove();
+    places.PlacesList = null;
   },
 
   init: function() {
@@ -92,6 +93,7 @@ window.places = {
       session.user.updateLoginStatus();
     };
 
+    // load fbjssdk
     (function(d){
        var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
        if (d.getElementById(id)) {return;}
