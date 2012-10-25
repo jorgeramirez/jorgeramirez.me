@@ -17,7 +17,7 @@ window.places = {
     places.Places = new places.Collections.PlacesCollection();
 
     // instantiate PlaceAdd view
-    new places.Views.PlaceAdd();
+    places.PlaceAddView = places.Views.PlaceAdd();
 
     // places table
 
@@ -52,11 +52,15 @@ window.places = {
     });
   },
 
-  // resets to do before login
+  // resets to do before login again
   beforeLogin: function() {
     $( '#app' ).hide();
     $( '#places-table' ).children().remove();
     places.PlacesList = null;
+    
+    if( !!places.PlaceAddView ){
+      places.PlaceAddView.undelegateEvents();
+    }
   },
 
   init: function() {
@@ -73,6 +77,7 @@ window.places = {
       session.user = new FacebookUser();
       
       session.user.on('facebook:unauthorized', function(model, response) {
+        me.beforeLogin();
         session.user.login();
       });
 

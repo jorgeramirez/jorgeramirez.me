@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Time: Thu Oct 25 2012 03:46:25 GMT-0300 (PYST)
+# Time: Thu Oct 25 2012 04:03:47 GMT-0300 (PYST)
 # This manifest was created by confess.js, http://github.com/jamesgpearce/confess
 #
 # Retrieved URL: http://localhost:3501/
@@ -26,7 +26,7 @@ http://localhost:3501/app/images/glyphicons-halflings-white.png?1351101108
 http://localhost:3501/app/images/glyphicons-halflings.png?1351101108
 http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places
 http://maps.gstatic.com/cat_js/intl/en_us/mapfiles/api-3/9/18/%7Bmain,places%7D.js
-scripts/48d6c5b8.scripts.js
+scripts/2efd2615.scripts.js
 scripts/vendor/560cb13f.FacebookUser.js
 scripts/vendor/8bc61845.jquery.min.js
 scripts/vendor/8faf9d1f.lodash.min.js
