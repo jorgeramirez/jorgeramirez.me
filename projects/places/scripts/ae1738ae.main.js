@@ -31,7 +31,7 @@ window.places = {
         $( '#places-table' ).append( placesListTpl );
 
         // setup listjs in order to do filtering
-        new List( 'places-table' , {
+        places.lists.Places = new List( 'places-table' , {
           valueNames: [ 'name', 'address', 'city', 'country' ]
         });
       });
@@ -52,6 +52,12 @@ window.places = {
     });
   },
 
+  // resets to do before login
+  beforeLogin: function() {
+      $( '#app' ).hide();
+      $( '#places-table' ).children().remove();
+  },
+
   init: function() {
     var me = this;
 
@@ -66,39 +72,25 @@ window.places = {
       session.user = new FacebookUser();
       
       session.user.on('facebook:unauthorized', function(model, response) {
-        console.info('facebook:unauthorized');
         session.user.login();
       });
 
       session.user.on('facebook:connected', function(model, response) {
-        console.info('facebook:connected');
         $( '#app' ).show();
         me.renderMainPage();
       });
 
       session.user.on('facebook:disconnected', function(model, response) {
-        console.info('facebook:disconnected');
+        me.beforeLogin();
         session.user.login();
       });
 
-      //$('#login').click(function(){ 
-      //  places.user.login(); 
-      //});
-
       $('#logout').click(function(){ 
-        session.user.logout(); 
+        session.user.logout();
       });
       
       session.user.updateLoginStatus();
     };
-
-    //(function(d, s, id) {
-      //var js, fjs = d.getElementsByTagName(s)[0];
-      //if (d.getElementById(id)) return;
-      //js = d.createElement(s); js.id = id;
-      //js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=306294449486120";
-      //fjs.parentNode.insertBefore(js, fjs);
-    //}(document, 'script', 'facebook-jssdk'));
 
     (function(d){
        var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
