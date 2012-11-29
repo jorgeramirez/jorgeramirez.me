@@ -1,3 +1,12 @@
+.hero-unit p {
+  padding-top: 1em;
+  font-size: 17px;
+}
+
+.row p {
+  text-align: justify;
+}
+
 .posts {
   list-style-type: none;
   margin-left: 0;
@@ -52,9 +61,6 @@ a.view-more {
   margin-right:4%
 }
 
-.hero-unit p {
-  padding-top: 1em;
-}
 
 .project {
   height: 150px;
