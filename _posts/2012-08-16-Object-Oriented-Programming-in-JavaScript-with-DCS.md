@@ -28,23 +28,23 @@ Here is an example of what you can do with DCS:
 
 Define the Class **Person**
 
-{% highlight js %}
-DCS.define('Person', { 
-    property: { 
-        name: '', 
-        lastname: '' 
-    }, 
+<pre class="prettyprint" data-lang="javascript">
+    DCS.define('Person', { 
+        property: { 
+            name: '', 
+            lastname: '' 
+        }, 
 
-    constructor: function(name, lastname) { 
-        this.name = name; 
-        this.lastname = lastname; 
-    }, 
+        constructor: function(name, lastname) { 
+            this.name = name; 
+            this.lastname = lastname; 
+        }, 
 
-    toString: function() { 
-        return 'Name: ' + this.name + ' Lastname: ' + this.lastname; 
-    } 
-}); 
-{% endhighlight %}
+        toString: function() { 
+            return 'Name: ' + this.name + ' Lastname: ' + this.lastname; 
+        } 
+    }); 
+</pre>
 
 The config object (the second parameter of the _DCS.define_ method) contains the methods and properties
 that will be part of the new class prototype, except for the **_property_** config object that you
@@ -52,34 +52,34 @@ can use to specify default values for instance variables. The **_property_** con
 generate getters/setters for each instance variable specified in this object. Therefore you can use 
 these generated methods as usual: 
 
-{% highlight js %}
-// create a new instance of Person
-var p1 = new Person("John", "Doe");
-console.log(p1.getName());      // prints "John"
-console.log(p1.setName("foo")); // sets the name to "foo"
-console.log(p1.getName());      // prints "foo"
-{% endhighlight %}
+<pre class="prettyprint" data-lang="javascript">
+    // create a new instance of Person
+    var p1 = new Person("John", "Doe");
+    console.log(p1.getName());      // prints "John"
+    console.log(p1.setName("foo")); // sets the name to "foo"
+    console.log(p1.getName());      // prints "foo"
+</pre>
 
 Define the Class **Worker** which extends from Person
 
-{% highlight js %}
-DCS.define('Worker', { 
-    extend: 'Person', 
+<pre class="prettyprint" data-lang="javascript">
+    DCS.define('Worker', { 
+        extend: 'Person', 
 
-    property: { 
-        jobTitle: '' 
-    }, 
+        property: { 
+            jobTitle: '' 
+        }, 
 
-    constructor: function(name, lastname, jobTitle) { 
-        this._super(name, lastname); 
-        this.jobTitle = jobTitle; 
-    }, 
+        constructor: function(name, lastname, jobTitle) { 
+            this._super(name, lastname); 
+            this.jobTitle = jobTitle; 
+        }, 
 
-    toString: function() { 
-        return this._super() + ' Job Title: ' + this.jobTitle; 
-    } 
-});
-{% endhighlight %}
+        toString: function() { 
+            return this._super() + ' Job Title: ' + this.jobTitle; 
+        } 
+    });
+</pre>
 
 One thing to notice here is that you can still have access to an overriden method by using 
 the **__\_super__** reference, this reference have temporary access to its parent's overriden method. 

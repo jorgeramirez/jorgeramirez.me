@@ -11,12 +11,15 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <!-- google webfonts -->
+    <link href='http://fonts.googleapis.com/css?family=Unkempt' rel='stylesheet' type='text/css'>
+    
     <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 
+    <link href="/assets/js/vendor/prettify/prettify.css" rel="stylesheet" type="text/css" media="all">
     <link href="/assets/css/socialicons.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/assets/css/pygments.css" rel="stylesheet" type="text/css" media="all">
     <link href="/assets/css/main.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- Le fav and touch icons -->
@@ -27,15 +30,8 @@
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   -->
 
-  <!-- vendor includes -->
-  <script type="text/javascript" src="/assets/js/vendor/modernizr.custom.16476.js"></script>
-  <script type="text/javascript" src="/assets/js/vendor/jquery-1.8.0.min.js"></script>
-  <script type="text/javascript" src="/assets/js/vendor/jquery-ajax-localstorage-cache.js"></script>
-  <script type="text/javascript" src="/assets/js/vendor/lodash.min.js"></script>
-  <script type="text/javascript" src="/assets/js/vendor/moment.min.js"></script>
-  <!-- end of vendor includes -->
 
-  
+
   <script type="text/javascript">
 
     var _gaq = _gaq || [];
@@ -71,5 +67,27 @@
     </div> <!-- /container -->
 
     <!--{% include JB/analytics %}-->
+
+  <!-- data tooltip template -->
+  {% include datatooltip.html %}
+  
+  <!-- vendor includes -->
+  <script type="text/javascript" src="/assets/js/vendor/prettify/prettify.js"></script>
+  <script type="text/javascript" src="/assets/js/vendor/modernizr.custom.16476.js"></script>
+  <script type="text/javascript" src="/assets/js/vendor/jquery-1.8.0.min.js"></script>
+  <script type="text/javascript" src="/assets/js/vendor/lodash.min.js"></script>
+  <!-- end of vendor includes -->
+  
+  <!-- js -->
+  <script type="text/javascript" src="/assets/js/header.js"></script>
+  <script type="text/javascript" src="/assets/js/tooltip-vendor-prefixes.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      prettyPrint();
+      blog.processVendorPrefixes();
+    });
+  </script>
+  <!-- -->
+  
   </body>
 </html>
