@@ -45,7 +45,7 @@ The HTML markup needed to accomplish this effect is shown in the following snipp
 </pre>
 <br>
 The `div.fold-outer` sets up the 3D aspect of the animation and `div.fold-inner` is  
-the element that progressively change during the animation.i
+the element that progressively change during the animation.
 
 ###CSS
 
