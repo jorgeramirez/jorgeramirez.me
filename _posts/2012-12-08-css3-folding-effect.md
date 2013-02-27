@@ -2,7 +2,7 @@
 layout: post
 title: "CSS3 Folding effect"
 description: ""
-category: [ demos ]
+categories: [ demos ]
 tags: [ CSS3 ]
 ---
 {% include JB/setup %}
