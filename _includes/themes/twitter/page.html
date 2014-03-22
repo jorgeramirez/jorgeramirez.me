@@ -12,7 +12,11 @@
 </div>
 
 <div class="row">
+  {% if page.title == 'About' %}
+  <div class="span8">
+  {% else %}
   <div class="span12">
+  {% endif %}
     {{ content }}
   </div>
 </div>
