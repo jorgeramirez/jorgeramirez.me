@@ -16,9 +16,9 @@ import {
   FaStackOverflow
 } from 'react-icons/fa';
 
-const IndexPage = () => {
+class IndexPage = () => {
   // eslint-disable-next-line no-restricted-globals
-  const availHeight = screen.availHeight;
+  const availHeight = window.screen.availHeight;
   const spaceSize = availHeight / 4;
 
   return (
