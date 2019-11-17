@@ -1,9 +1,3 @@
-# Source code of my personal site
+# Personal website
 
-My personal site is powered by [Jekyll](http://jekyllrb.com/) with all the help
-from [Jekyll Bootstrap](http://jekyllbootstrap.com)
-
-
-## License
-
-The information posted on my site is licensed under [Creative Commons](http://creativecommons.org/licenses/by-nc-sa/3.0/)
+This repository contains the source code of my [website](http://jramirez.me/), created using [Gatsby](https://www.gatsbyjs.org/) and inspired by this [cool demo](https://codepen.io/genarocolusso/pen/xONEXg).
