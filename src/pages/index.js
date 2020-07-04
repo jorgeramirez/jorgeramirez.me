@@ -69,7 +69,7 @@ class IndexPage extends React.Component {
                       <Col xs={12} md={12} lg={8}>
                         <div className="profile-info">
                           <h2>Jorge Ramírez</h2>
-                          <div style={{ lineHeight: 1.2 }}>
+                          <div style={{ lineHeight: 1.2 }} className="info">
                             <p style={{ marginBottom: 0 }}>
                               <span style={{ fontSize: '1.15rem' }}>Ph.D. candidate</span>{' '}
                               <a href="https://ict.unitn.it/" target="_blank" rel="noopener noreferrer">
@@ -107,6 +107,18 @@ class IndexPage extends React.Component {
                     </Row>
                   </div>
                 </Card.Body>
+                <p style={{ padding: '1.25rem', textAlign: 'justify' }}>
+                  I'm a Ph.D. candidate at the University of Trento. My thesis work focuses on developing strategies for
+                  supporting crowdsourcing workers in solving complex tasks. You can find my publications on my{' '}
+                  <a
+                    href="https://scholar.google.com/citations?user=RntrsC8AAAAJ&hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Google Scholar profile
+                  </a>
+                  .
+                </p>
               </Card>
             </Col>
           </Row>
