@@ -109,8 +109,9 @@ class IndexPage extends React.Component {
                 </Card.Body>
                 <p style={{ padding: '1.25rem', textAlign: 'justify' }}>
                   I'm a Ph.D. candidate at the University of Trento. My thesis work focuses on developing strategies for
-                  addressing bias and quality concerns in designing, running, and reporting crowdsourcing experiments (helping crowd workers,
-                  the overall task design, and task requesters). You can find my publications on my{' '}
+                  addressing performance concerns and bias in designing, running, and reporting crowdsourcing
+                  experiments (helping crowd workers, the overall task design, and task requesters). You can find my
+                  publications on my{' '}
                   <a
                     href="https://scholar.google.com/citations?user=RntrsC8AAAAJ&hl=en"
                     target="_blank"
