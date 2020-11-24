@@ -15,6 +15,7 @@ import {
   FaTwitterSquare,
   FaStackOverflow
 } from 'react-icons/fa';
+import Awards from '../components/awards';
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -165,6 +166,11 @@ class IndexPage extends React.Component {
                   </a>
                 </span>
               </div>
+            </Col>
+          </Row>
+          <Row className="justify-content-md-center justify-content-sm-center" style={{ marginTop: '40px' }}>
+            <Col>
+              <Awards />
             </Col>
           </Row>
         </Container>
