@@ -85,7 +85,7 @@ export default ({ data }) => {
 
             <p style={{ textAlign: 'center', marginTop: '1rem' }}>2019</p>
             <li>
-              <b>Jorge Ramírez</b>, Marcos Baez, Fabio Casati, Luca Cernuzzi, and Boualem Benatallah.{' '}
+              <b>Jorge Ramírez</b>, Marcos Baez, Fabio Casati, and Boualem Benatallah.{' '}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -126,7 +126,7 @@ export default ({ data }) => {
             </li>
             <p style={{ textAlign: 'center', marginTop: '1rem' }}>2018</p>
             <li>
-              <b>Jorge Ramírez</b>, Evgeny Krivosheev, Marcos Baez, Fabio Casati, Luca Cernuzzi, and Boualem Benatallah.{' '}
+              <b>Jorge Ramírez</b>, Evgeny Krivosheev, Marcos Baez, Fabio Casati, and Boualem Benatallah.{' '}
               <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/1805.12376">
                 CrowdRev: A platform for Crowd-based Screening of Literature Reviews
               </a>
