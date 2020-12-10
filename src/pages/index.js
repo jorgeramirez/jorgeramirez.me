@@ -1,182 +1,126 @@
-import React from 'react';
+import React, { useContext } from "react"
+import { graphql } from "gatsby"
+import ThemeContext from "../utils/theme"
+import { PageLayout } from "../components"
+import { SEO } from "../utils"
+import { Container, Image } from "react-bootstrap"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import '../styles/styles.scss';
-import MyImage from '../components/image';
-import SEO from '../components/seo';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import {
-  FaGraduationCap,
-  FaLinkedin,
-  FaGithub,
-  FaFacebookSquare,
-  FaTwitterSquare,
-  FaStackOverflow
-} from 'react-icons/fa';
-import Awards from '../components/awards';
-
-class IndexPage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      width: 0
-    };
-  }
-
-  componentDidMount() {
-    this.handleWindowSizeChange(); // Set width
-    window.addEventListener('resize', this.handleWindowSizeChange);
-  }
-
-  // make sure to remove the listener
-  // when the component is not mounted anymore
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleWindowSizeChange);
-  }
-
-  handleWindowSizeChange = () => {
-    this.setState({ width: window.screen.availHeight });
-  };
-
-  render() {
-    // eslint-disable-next-line no-restricted-globals
-    const availHeight = this.state.width;
-    const spaceSize = availHeight / 4;
-
-    return (
-      <div style={{ height: availHeight, overflow: 'scroll', background: '#FDFEFF' }}>
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossOrigin="anonymous"
+export default ({ data }) => {
+  const { unemployed, firstName, lastName, occupation } = data.site.siteMetadata
+  const { dark } = useContext(ThemeContext)
+  return (
+    <PageLayout>
+      <SEO title="Home" />
+      <Container className="text-center pt-5 mt-5" fluid>
+        <Image
+          width="150"
+          height="150"
+          fluid
+          src={dark ? `../../icons/darth-vader.png` : `../../icons/r2-d2.png`}
+          alt={dark ? "Darth Vader" : "R2-D2"}
         />
-        <SEO title="Home" />
-        <Container>
-          <Row
-            className="justify-content-md-center justify-content-sm-center"
-            style={{ position: 'relative', zIndex: 1000 }}
+        {unemployed && (
+          <p className="mt-2">
+            <b> Hey! I am looking for new opportunities :)</b>
+          </p>
+        )}
+        <Container className="py-0 my-0">
+          <h1
+            style={{
+              fontSize: "5rem",
+              color: "black",
+            }}
           >
-            <Col xs={12} md={7} lg={7}>
-              <Card style={{ marginTop: spaceSize, boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.2)', border: 'none' }}>
-                <Card.Body style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-                  <div style={{ width: '100%' }}>
-                    <Row>
-                      <Col xs={{ span: 8, offset: 2 }} md={{ span: 12, offset: 0 }} lg={{ span: 4, offset: 0 }}>
-                        <MyImage />
-                      </Col>
-                      <Col xs={12} md={12} lg={8}>
-                        <div className="profile-info">
-                          <h2>Jorge Ramírez</h2>
-                          <div style={{ lineHeight: 1.2 }} className="info">
-                            <p style={{ marginBottom: 0 }}>
-                              <span style={{ fontSize: '1.15rem' }}>Ph.D. candidate</span>{' '}
-                              <a href="https://ict.unitn.it/" target="_blank" rel="noopener noreferrer">
-                                @ UNITN
-                              </a>
-                              .
-                            </p>
-                            <p style={{ marginBottom: 0 }}>
-                              <span style={{ fontSize: '1.15rem' }}>Informatics Engineering</span>{' '}
-                              <a href="https://www.pol.una.py/" target="_blank" rel="noopener noreferrer">
-                                @ FPUNA
-                              </a>
-                              .
-                            </p>
-                            <p style={{ marginBottom: 10 }}>
-                              <span style={{ fontSize: '1.15rem' }}>Co-founder</span>{' '}
-                              <a href="https://www.codium.com.py/en/" target="_blank" rel="noopener noreferrer">
-                                @ Codium
-                              </a>
-                              .
-                            </p>
-                            <p style={{ marginBottom: 0, fontSize: '0.85rem' }} className="location-info">
-                              <b>Asunci&oacute;n</b>{' '}
-                              <span role="img" aria-label="From">
-                                🇵🇾
-                              </span>{' '}
-                              &#10233; <b>Trento</b>{' '}
-                              <span role="img" aria-label="Home">
-                                🇮🇹
-                              </span>
-                            </p>
-                          </div>
-                        </div>
-                      </Col>
-                    </Row>
-                  </div>
-                </Card.Body>
-                <p style={{ padding: '1.25rem', textAlign: 'justify' }}>
-                  I'm a Ph.D. candidate at the University of Trento. My thesis work focuses on developing strategies for
-                  addressing performance concerns and bias in designing, running, and reporting crowdsourcing
-                  experiments (helping crowd workers, the overall task design, and task requesters). You can find my
-                  publications on my{' '}
-                  <a
-                    href="https://scholar.google.com/citations?user=RntrsC8AAAAJ&hl=en"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Google Scholar profile
-                  </a>
-                  .
-                </p>
-              </Card>
-            </Col>
-          </Row>
-          <Row
-            className="justify-content-md-center justify-content-sm-center"
-            style={{ position: 'relative', zIndex: 900 }}
-          >
-            <Col xs={{ span: 11 }} sm={{ span: 10, offset: 0 }} md={6} className="media-badges-container">
-              <div className="media-badges">
-                <span style={{ verticalAlign: 'middle', marginRight: '1rem' }}>
-                  <a
-                    href="https://scholar.google.com/citations?user=RntrsC8AAAAJ&hl=en"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaGraduationCap />
-                  </a>
-                </span>
-                <span style={{ verticalAlign: 'middle', marginRight: '1rem' }}>
-                  <a href="https://www.linkedin.com/in/jorgeramirez1990" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin />
-                  </a>
-                </span>
-                <span style={{ verticalAlign: 'middle', marginRight: '1rem' }}>
-                  <a href="https://www.github.com/jorgeramirez" target="_blank" rel="noopener noreferrer">
-                    <FaGithub />
-                  </a>
-                </span>
-                <span style={{ verticalAlign: 'middle', marginRight: '1rem' }}>
-                  <a href="https://stackoverflow.com/users/1726085/jramirez" target="_blank" rel="noopener noreferrer">
-                    <FaStackOverflow />
-                  </a>
-                </span>
-                <span style={{ verticalAlign: 'middle', marginRight: '1rem' }}>
-                  <a href="https://www.facebook.com/jorgeramirez1990" target="_blank" rel="noopener noreferrer">
-                    <FaFacebookSquare />
-                  </a>
-                </span>
-                <span style={{ verticalAlign: 'middle', marginRight: '1rem' }}>
-                  <a href="https://www.twitter.com/ingheniero" target="_blank" rel="noopener noreferrer">
-                    <FaTwitterSquare />
-                  </a>
-                </span>
-              </div>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center justify-content-sm-center" style={{ marginTop: '40px' }}>
-            <Col>
-              <Awards />
-            </Col>
-          </Row>
+            <span className="first-name">{firstName}</span>&nbsp;
+            <span className="last-name">{lastName}</span>
+          </h1>
+          <p>
+            <i>
+              {occupation} by day,&nbsp;
+              {dark ? `Imperial enforcer by night` : `Rebel scum by night`}
+            </i>
+          </p>
         </Container>
-      </div>
-    );
-  }
+        <hr className="my-3 w-25" />
+        <div className="d-md-inline-flex icons-container">
+          <a
+            href="https://www.github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "github"]}
+              className="icons github"
+              title="Github"
+            />
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "linkedin"]}
+              className="icons linkedin"
+              title="LinkedIn"
+            />
+          </a>
+          <a
+            href="https://www.freecodecamp.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "free-code-camp"]}
+              className="icons fcc"
+              title="FreeCodeCamp"
+            />
+          </a>
+          <a
+            href="https://www.hackerrank.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "hackerrank"]}
+              className="icons hr"
+              title="Hackerrank"
+            />
+          </a>
+          <a
+            href="mailto:johndoe@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fas", "envelope"]}
+              className="icons mail"
+              title="e-mail"
+            />
+          </a>
+          <a href="../../resume.pdf" target="_blank" download>
+            <FontAwesomeIcon
+              icon={["fas", "file-alt"]}
+              className="icons file"
+              title="Resume"
+            />
+          </a>
+        </div>
+      </Container>
+    </PageLayout>
+  )
 }
 
-export default IndexPage;
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        unemployed
+        firstName
+        lastName
+        occupation
+      }
+    }
+  }
+`
