@@ -39,24 +39,33 @@ export default ({ data }) => {
           </p>
           <p className="i-5 mt-4 pt-2">
             Hello there! My name is <b>{`${author}`}</b>. I am a&nbsp;
-            <b>Ph.D. candidate</b> at the University of Trento, Italy. My thesis work focuses on developing strategies
-            for addressing performance concerns and bias in designing, running, and reporting crowdsourcing experiments
-            (helping crowd workers, the overall task design, and task requesters).
+            <b>Ph.D. candidate</b> at the University of Trento, Italy. My current research interest is broadly in human
+            computation and crowdsourcing for collecting high-quality data, with potential applications in machine
+            learning and information retrieval. My thesis work focuses on developing strategies for addressing
+            performance concerns and bias in designing, running, and reporting crowdsourcing experiments (helping crowd
+            workers, the overall task design, and task requesters).
           </p>
           <p className="i-5">
             Before starting my Ph.D., I worked for five years as a software engineer (2013-2017). From 2016 to 2017, I
             worked full-time as a lead software engineer at my own company, which I co-founded with my university
-            classmates back in 2013 (initially as a side hustle, but it's been growing :)
+            classmates back in 2013 (initially as a side hustle, but it's been growing :) I hold a bachelor's in
+            computer science from the Polytechnic Faculty of the National University of Asuncion (
+            <a href="https://www.pol.una.py/" target="_blank" rel="noopener noreferrer">
+              Facultad Politénica, UNA
+            </a>
+            ). Unlike typical 4-years bachelor programs, this is a rather monolithic 5-years (+1 for thesis) program in
+            computer science (the exact name, Informatics Engineering).
           </p>
           <p className="i-5">
-            In my spare time, I like to run, play football/soccer, and breakdance (yes, bboying, I used to do cool tricks back in
-            the day ;)
+            In my spare time, I like to run, play football/soccer, and breakdance (yes, bboying, I used to do cool
+            tricks back in the day ;)
           </p>
           <p className="i-5">
             I'm married to Sofi{' '}
             <span className="heart" style={{ color: 'red' }}>
               &nbsp;❤&nbsp;
-            </span>, and we have a dog 🐶 named Coco.
+            </span>
+            , and we have a dog 🐶 named Coco.
           </p>
           <br />
           <p>
