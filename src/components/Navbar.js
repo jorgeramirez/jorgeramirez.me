@@ -10,11 +10,12 @@ export default () => {
   return (
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
       <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
-        <FontAwesomeIcon
-          icon={["fab", `${dark ? "empire" : "rebel"}`]}
-          className={`brand-icon ${dark ? "empire" : "rebel"}`}
+        {/* <FontAwesomeIcon
+          icon={["fas", `home`]}
+          className={`icons fa-home`}
           title="Home"
-        />
+        /> */}
+        127.0.0.1
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse
@@ -22,19 +23,19 @@ export default () => {
         className="justify-content-end"
       >
         <Nav className="pr-3 mr-4 nav-links">
-          <Nav.Link className="ml-2" as={Link} to="/blog" title="Blog">
+          {/* <Nav.Link className="ml-2" as={Link} to="/blog" title="Blog">
             Blog
-          </Nav.Link>
+          </Nav.Link> */}
           <Nav.Link className="ml-2" as={Link} to="/about" title="About">
             About
+          </Nav.Link>
+          <Nav.Link className="ml-2" as={Link} to="/publications" title="Publications">
+            Publications
           </Nav.Link>
           <Nav.Link className="ml-2" as={Link} to="/projects" title="Projects">
             Projects
           </Nav.Link>
-          <Nav.Link className="ml-2" as={Link} to="/resume" title="Resume">
-            Resume
-          </Nav.Link>
-          <Form className="ml-3 my-auto">
+          {/* <Form className="ml-3 my-auto">
             <Form.Check
               type="switch"
               id="custom-switch"
@@ -43,7 +44,7 @@ export default () => {
               checked={dark}
               onChange={toggleDark}
             />
-          </Form>
+          </Form> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
