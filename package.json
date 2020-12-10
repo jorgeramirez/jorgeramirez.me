@@ -1,7 +1,7 @@
 {
-  "name": "john-doe-starter-site",
+  "name": "jramirez.me",
   "private": true,
-  "description": "A personal site built on the bare-bones starter for Gatsby",
+  "description": "Jorge's personal website",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -50,9 +50,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/surudhb/gatsby-personal-site-template"
+    "url": "https://github.com/jorgeramirez/jorgeramirez.me"
   },
   "bugs": {
-    "url": "https://github.com/surudhb/gatsby-personal-site-template/issues"
+    "url": "https://github.com/jorgeramirez/jorgeramirez.me/issues"
   }
 }
