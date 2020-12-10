@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default ({ data }) => {
   const { unemployed, firstName, lastName, occupation } = data.site.siteMetadata;
   const { dark } = useContext(ThemeContext);
+  const windowGlobal = typeof window !== 'undefined' && window;
   return (
     <PageLayout>
       <SEO title="Home" />
@@ -22,7 +23,7 @@ export default ({ data }) => {
         <Container className="py-0 my-0">
           <h1
             style={{
-              fontSize: window.innerWidth < 800 ? '3rem' : '5rem',
+              fontSize: windowGlobal && window.innerWidth < 800 ? '3rem' : '5rem',
               color: 'black'
             }}
           >

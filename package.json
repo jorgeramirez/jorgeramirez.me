@@ -12,7 +12,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "clean-serve": "gatsby clean && gatsby build && gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build && gh-pages -d public -b gh-pages"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
@@ -44,6 +45,7 @@
   "devDependencies": {
     "eslint-config-react-app": "^5.2.1",
     "eslint-plugin-react-hooks": "^4.0.4",
+    "gh-pages": "^3.1.0",
     "prettier": "2.0.5"
   },
   "repository": {
