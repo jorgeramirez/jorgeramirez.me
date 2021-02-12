@@ -31,7 +31,13 @@ const DemoPaper = () => (
 
 const Award = ({ name }) => (
   <span className="px-2 mr-1" style={{ fontSize: '90%' }}>
-    🏆 <b style={{ color: '#EEBB00' }}>{name}</b>
+    🏆 <b style={{ color: '#EEBB00', fontWeight: 'bolder' }}>{name}</b>
+  </span>
+);
+
+const Oral = () => (
+  <span className="px-2 mr-1" style={{ fontSize: '90%' }}>
+    📢 <b style={{ color: '#EEBB00', fontWeight: 'bolder' }}>Oral</b>
   </span>
 );
 
@@ -52,7 +58,7 @@ export default ({ data }) => {
               </a>
               . To appear in{' '}
               <em>Proceedings of the 14th ACM International Conference on Web Search and Data Mining (WSDM 2021)</em>
-              . <FullPaper />
+              . <FullPaper /> <Oral />
             </li>
             <li>
               Yacine Gaci, <b>Jorge Ramírez</b>, Boualem Benatallah, Fabio Casati, and Khalid Benabdeslem.{' '}
