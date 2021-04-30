@@ -56,14 +56,16 @@ export default ({ data }) => {
               <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2011.02891.pdf">
                 On the impact of predicate complexity in crowdsourced classification tasks
               </a>
-              . To appear in{' '}
+              . In{' '}
               <em>Proceedings of the 14th ACM International Conference on Web Search and Data Mining (WSDM 2021)</em>
               . <FullPaper /> <Oral />
             </li>
             <li>
               Yacine Gaci, <b>Jorge Ramírez</b>, Boualem Benatallah, Fabio Casati, and Khalid Benabdeslem.{' '}
-              <a href="#">Subjectivity Aware Conversational Search Services</a>. To appear in{' '}
-              <em>Proceedings of 24th International Conference on Extending Database Technology (EDBT 2021)</em>
+              <a target="_blank" rel="noopener noreferrer" href="https://openproceedings.org/2021/conf/edbt/p70.pdf">
+                Subjectivity Aware Conversational Search Services
+              </a>
+              . In <em>Proceedings of 24th International Conference on Extending Database Technology (EDBT 2021)</em>
               . <FullPaper />
             </li>
 
