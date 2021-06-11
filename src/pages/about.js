@@ -41,7 +41,7 @@ export default ({ data }) => {
             Hello there! My name is <b>{`${author}`}</b>. I am a&nbsp;
             <b>Ph.D. candidate</b> at the University of Trento, Italy. My current research interest is broadly in human
             computation and crowdsourcing for collecting high-quality data, with potential applications in machine
-            learning and information retrieval. My thesis work focuses on developing strategies for addressing
+            learning. My thesis work focuses on developing strategies for addressing
             performance concerns and bias in designing, running, and reporting crowdsourcing experiments (helping crowd
             workers, the overall task design, and task requesters).
           </p>
