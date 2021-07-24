@@ -134,7 +134,6 @@ export const query = graphql`
   query {
     site {
       siteMetadata {
-        unemployed
         firstName
         lastName
         occupation

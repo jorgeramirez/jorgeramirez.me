@@ -2,7 +2,7 @@
   "name": "jramirez.me",
   "private": true,
   "description": "Jorge's personal website",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -25,6 +25,7 @@
     "gatsby-image": "^2.7.0",
     "gatsby-plugin-catch-links": "^2.6.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-google-gtag": "^3.10.0",
     "gatsby-plugin-manifest": "^2.8.0",
     "gatsby-plugin-nprogress": "^2.6.0",
     "gatsby-plugin-offline": "^3.6.0",
