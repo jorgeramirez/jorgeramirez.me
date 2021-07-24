@@ -2,7 +2,7 @@
   "name": "jramirez.me",
   "private": true,
   "description": "Jorge's personal website",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -13,7 +13,7 @@
     "clean": "gatsby clean",
     "clean-serve": "gatsby clean && gatsby build && gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b gh-pages"
+    "deploy": "gatsby build && echo 'jramirez.me' > ./public/CNAME  && gh-pages -d public -b gh-pages"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
