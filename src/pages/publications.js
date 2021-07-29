@@ -61,7 +61,7 @@ export default ({ data }) => {
               <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2107.13519.pdf">
                 On the state of reporting in crowdsourcing experiments and a checklist to aid current practices
               </a>
-              . To appear in {' '}
+              . In {' '}
               <em>Proceedings of the 24th ACM Conference on Computer Supported Cooperative Work and Social Computing (CSCW 2021)</em>
               . <FullPaper /> <Website link="https://trentocrowdai.github.io/crowdsourcing-checklist/"/>
             </li>
