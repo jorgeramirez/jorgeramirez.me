@@ -41,6 +41,12 @@ const Oral = () => (
   </span>
 );
 
+const Website = ({link}) => (
+  <span className="px-2 mr-1" style={{ fontSize: '90%' }}>
+    <a href={link} target="_blank"><b style={{ fontWeight: 'bolder' }}>🌐 Website</b></a>
+  </span>
+);
+
 export default ({ data }) => {
   return (
     <PageLayout>
@@ -57,7 +63,7 @@ export default ({ data }) => {
               </a>
               . To appear in {' '}
               <em>Proceedings of the 24th ACM Conference on Computer Supported Cooperative Work and Social Computing (CSCW 2021)</em>
-              . <FullPaper />
+              . <FullPaper /> <Website link="https://trentocrowdai.github.io/crowdsourcing-checklist/"/>
             </li>
             <li>
               <b>Jorge Ramírez</b>, Marcos Baez, Fabio Casati, Luca Cernuzzi, Boualem Benatallah, Ekaterina A. Taran,
