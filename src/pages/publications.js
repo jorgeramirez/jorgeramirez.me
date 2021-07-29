@@ -62,7 +62,7 @@ export default ({ data }) => {
                 On the state of reporting in crowdsourcing experiments and a checklist to aid current practices
               </a>
               . In {' '}
-              <em>Proceedings of the 24th ACM Conference on Computer Supported Cooperative Work and Social Computing (CSCW 2021)</em>
+              <em>Proceedings of the ACM on Human-Computer Interaction (PACM HCI), presented at the 24th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW 2021)</em>
               . <FullPaper /> <Website link="https://trentocrowdai.github.io/crowdsourcing-checklist/"/>
             </li>
             <li>
