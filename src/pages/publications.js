@@ -51,6 +51,15 @@ export default ({ data }) => {
           <ol reversed={true}>
             <p style={{ textAlign: 'center' }}>2021</p>
             <li>
+              <b>Jorge Ramírez</b>, Burcu Sayin, Marcos Baez, Fabio Casati, Luca Cernuzzi, Boualem Benatallah, and Gianluca Demartini.{' '}
+              <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2107.13519.pdf">
+                On the state of reporting in crowdsourcing experiments and a checklist to aid current practices
+              </a>
+              . To appear in {' '}
+              <em>Proceedings of the 24th ACM Conference on Computer Supported Cooperative Work and Social Computing (CSCW 2021)</em>
+              . <FullPaper />
+            </li>
+            <li>
               <b>Jorge Ramírez</b>, Marcos Baez, Fabio Casati, Luca Cernuzzi, Boualem Benatallah, Ekaterina A. Taran,
               and Veronika A. Malanina.{' '}
               <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2011.02891.pdf">
