@@ -31,7 +31,12 @@ export default ({ data }) => {
             <span className="last-name">{lastName}</span>
           </h1>
           <p>
-            <i>(Software Engineer + Researcher) with a passion for building things that matter.</i>
+            <i>Researcher and software engineer keen to learn new things. </i>
+            <br />
+            <i>
+              Interested in distributed systems, human-in-the-loop data curation pipelines for AI-powered systems, and
+              everything in between.{' '}
+            </i>
           </p>
 
           <div className="profile-info">
