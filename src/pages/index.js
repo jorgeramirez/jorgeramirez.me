@@ -32,10 +32,9 @@ export default ({ data }) => {
           </h1>
           <p>
             <i>Researcher and software engineer keen to learn new things. </i>
-            <br />
             <i>
-              Interested in distributed systems, human-in-the-loop data curation pipelines for AI-powered systems, and
-              everything in between.{' '}
+              Interested in distributed systems, machine/deep learning, <br />
+              human-in-the-loop data curation pipelines for AI-powered systems, and everything in between.{' '}
             </i>
           </p>
 
