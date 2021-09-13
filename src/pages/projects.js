@@ -67,11 +67,9 @@ export default () => {
             tags={['Java EE', 'Oracle', 'AngularJS']}
           >
             <p style={{ marginBottom: '0.5rem' }}>
-              I worked as the team leader of the software consultancy project to extend the datasets offered by the
-              Ministerio de Hacienda (Ministry of Finance) at its open data portal. We published eight new datasets at
-              the open data portal. And to make this work possible, we worked alongside several information stakeholders
-              from different departments of the Ministry of Finance. We developed this project as part of USAID-CEAMSO's
-              Democracy and Governance program.
+              Led a team of 5 developers to extend the open data portal. This project allows 7+ million citizens to
+              check what are the country’s expenses. Worked with several department directors to understand their
+              portion of the system and database, leading to the release of 8 new datasets and visualizations.
             </p>
             <div>
               <a href="https://datos.hacienda.gov.py/" target="_blank" rel="noopener noreferrer">
@@ -93,7 +91,8 @@ export default () => {
             tags={['AngularJS']}
           >
             <p style={{ marginBottom: '0.5rem' }}>
-              I was a senior frontend engineer to the Open Source Participatory Budgeting platform known as AppCivist.
+              Implemented the new version of the frontend, evolving the initial (monolithic) jQuery-based prototype to a
+              component-based architecture using AngularJS.
             </p>
             <div>
               <a href="https://github.com/socialappslab/appcivist-pb-client" target="_blank" rel="noopener noreferrer">
@@ -115,16 +114,8 @@ export default () => {
             tags={['Java EE', 'PostgreSQL', 'AngularJS']}
           >
             <p style={{ marginBottom: '0.5rem' }}>
-              I worked as the team leader of the software consultancy project for the Secretaría Nacional de
-              Anticorrupción (National Anticorruption Secretariat, SENAC). To deliver the project, we worked alongside
-              the team from SENAC and the technical staff from the Ministerio de Tecnologías de la Información y
-              Comunicación (Ministry of Information Technologies, MITIC). Active transparency is to publish information
-              without anyone requesting it, making the government proactively transparent. The portal includes data that
-              public institutions are required to post periodically based on what is established by the following laws:
-              * Law 5282: Free Citizen Access to Information and Government Transparency. * Law 5189: That establishes
-              the obligation of provision and information in the use of public resources on remuneration assigned to
-              Paraguayan public servant. We developed the project as part of USAID-CEAMSO's Democracy and Governance
-              program.
+              Led a team of 3 developers to build a system that regularly crawls the website from 300+ public
+              institutions, ensuring these publish required documents, and offers a dashboard for monitoring.
             </p>
             <div>
               <a
@@ -150,13 +141,8 @@ export default () => {
             tags={['Java EE', 'PostgreSQL', 'AngularJS']}
           >
             <p style={{ marginBottom: '0.5rem' }}>
-              I worked as a senior software engineer of the software consultancy project for the Ministerio de
-              Tecnologías de la Información y Comunicación (Ministry of Information Technologies, MITIC). My role was to
-              coordinate the team of developers and work closely with the project leader. The goal was to work together
-              with the technical staff from MITIC to design, develop, and deploy a unified portal for accessing public
-              information (to comply with the law number 5282/2014). The portal allows citizens to request, search, and
-              read the information that is (or should be) publicly made available by national institutions. We developed
-              the project as part of USAID-CEAMSO's Democracy and Governance program.
+              Led a team of 2 developers to create a portal for the Ministry of Information Technologies that allows 7+
+              million citizens to request documents from public institutions.
             </p>
             <div>
               <a href="https://informacionpublica.paraguay.gov.py/" target="_blank" rel="noopener noreferrer">
@@ -178,10 +164,9 @@ export default () => {
             tags={['Ruby on Rails', 'PostgreSQL', 'JWT', 'redis', 'Swagger']}
           >
             <p style={{ marginBottom: '0.5rem' }}>
-              I architected and implemented ACAD-WS, a RESTful service layer on top of the software known as ACAD, which
-              is the central institutional software used at the Universidad Nacional de Asunción (National University of
-              Asuncion, UNA). This service exposes some of the core functionalities of the system to client-side
-              applications used by the Facultad Politécnica (Polytechnic Faculty, FP-UNA).
+              Implemented a RESTful service layer, ACAD-WS, on top of the central institutional software (ACAD) used at
+              the University. ACAD-WS exposes some of ACAD's core functionalities to client-side applications used by
+              the faculty.
             </p>
           </Project>
 
