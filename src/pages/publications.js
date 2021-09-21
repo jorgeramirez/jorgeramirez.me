@@ -57,6 +57,15 @@ export default ({ data }) => {
           <ol reversed={true}>
             <p style={{ textAlign: 'center' }}>2021</p>
             <li>
+              <b>Jorge Ramírez</b>, Auday Berro, Marcos Baez, Boualem Benatallah, and Fabio Casati.{' '}
+              <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2109.09420.pdf">
+                Crowdsourcing Diverse Paraphrases for Training Task-oriented Bots
+              </a>
+              . In {' '}
+              <em>Works-in-progress &amp; Demonstrations track of the ninth AAAI Conference on Human Computation and Crowdsourcing (HCOMP 2021)</em>
+              . <ShortPaper /> 
+            </li>
+            <li>
               <b>Jorge Ramírez</b>, Burcu Sayin, Marcos Baez, Fabio Casati, Luca Cernuzzi, Boualem Benatallah, and Gianluca Demartini.{' '}
               <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2107.13519.pdf">
                 On the state of reporting in crowdsourcing experiments and a checklist to aid current practices
