@@ -72,7 +72,7 @@ export default ({ data }) => {
               </a>
               . In {' '}
               <em>Proceedings of the ACM on Human-Computer Interaction (PACM HCI), presented at the 24th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW 2021)</em>
-              . <FullPaper /> <Website link="https://trentocrowdai.github.io/crowdsourcing-checklist/"/>
+              . <FullPaper /> <Website link="https://trentocrowdai.github.io/crowdsourcing-checklist/"/> <Award name="Methods Recognition" />
             </li>
             <li>
               <b>Jorge Ramírez</b>, Marcos Baez, Fabio Casati, Luca Cernuzzi, Boualem Benatallah, Ekaterina A. Taran,
