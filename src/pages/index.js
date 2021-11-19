@@ -41,7 +41,7 @@ export default ({ data }) => {
           <div className="profile-info">
             <div style={{ lineHeight: 1.2 }} className="info">
               <p style={{ marginBottom: 0 }}>
-                <span style={{ fontSize: '1.15rem' }}>Ph.D. candidate</span>{' '}
+                <span style={{ fontSize: '1.15rem' }}>Ph.D.</span>{' '}
                 <a href="https://ict.unitn.it/" target="_blank" rel="noopener noreferrer">
                   @ UNITN
                 </a>
