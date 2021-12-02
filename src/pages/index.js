@@ -34,7 +34,7 @@ export default ({ data }) => {
             <i>Researcher and software engineer keen to learn new things. </i>
             <i>
               Interested in distributed systems, machine/deep learning, <br />
-              human-in-the-loop data curation pipelines for AI-powered systems, and everything in between.{' '}
+              human-in-the-loop data curation pipelines for AI-powered systems, MLOps, and everything in between.{' '}
             </i>
           </p>
 
