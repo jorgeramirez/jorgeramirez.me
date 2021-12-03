@@ -23,15 +23,15 @@ export default () => {
         className="justify-content-end"
       >
         <Nav className="pr-3 mr-4 nav-links">
-          {/* <Nav.Link className="ml-2" as={Link} to="/blog" title="Blog">
-            Blog
-          </Nav.Link> */}
           <Nav.Link className="ml-2" as={Link} to="/about" title="About">
             About
           </Nav.Link>
           <Nav.Link className="ml-2" as={Link} to="/publications" title="Publications">
             Publications
           </Nav.Link>
+          <a className="ml-2 nav-link" href="https://blog.jramirez.me" title="Blog">
+            Blog
+          </a>
           <Nav.Link className="ml-2" as={Link} to="/projects" title="Projects">
             Projects
           </Nav.Link>
