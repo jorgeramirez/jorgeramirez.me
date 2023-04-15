@@ -73,15 +73,15 @@ export default ({ data }) => {
                 <span role="img" aria-label="From">
                   🇵🇾
                 </span>{' '}
-                &#10233; <b>Trento</b>{' '}
+                &#10233; <b>Barcelona</b>{' '}
                 <span role="img" aria-label="Home">
-                  🇮🇹
+                  🇪🇸
                 </span>
               </p>
             </div>
           </div>
         </Container>
-        <hr className="my-3 w-25" />
+        <hr className="my-3 w-25" style={{ margin: 'auto' }} />
         <div className="d-md-inline-flex icons-container" style={{ fontSize: '2rem' }}>
           <a
             href="https://scholar.google.com/citations?user=RntrsC8AAAAJ&hl=en"
