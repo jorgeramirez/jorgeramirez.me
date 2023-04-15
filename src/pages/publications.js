@@ -6,25 +6,25 @@ import Container from 'react-bootstrap/Container';
 import Badge from 'react-bootstrap/Badge';
 
 const FullPaper = () => (
-  <Badge key={'Full paper'} pill variant="secondary" className="px-2 mr-1">
+  <Badge key={'Full paper'} pill bg="secondary" className="px-2 mr-1">
     {'Full paper'}
   </Badge>
 );
 
 const Poster = () => (
-  <Badge key={'Poster'} pill variant="secondary" className="px-2 mr-1">
+  <Badge key={'Poster'} pill bg="secondary" className="px-2 mr-1">
     {'Poster'}
   </Badge>
 );
 
 const ShortPaper = () => (
-  <Badge key={'Short paper'} pill variant="secondary" className="px-2 mr-1">
+  <Badge key={'Short paper'} pill bg="secondary" className="px-2 mr-1">
     {'Short paper'}
   </Badge>
 );
 
 const DemoPaper = () => (
-  <Badge key={'Demo paper'} pill variant="secondary" className="px-2 mr-1">
+  <Badge key={'Demo paper'} pill bg="secondary" className="px-2 mr-1">
     {'Demo paper'}
   </Badge>
 );

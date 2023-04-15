@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Container, Badge, Col, Row } from 'react-bootstrap';
 
 export default ({ tags, title, from, to, affiliation, children }) => {
@@ -16,9 +16,12 @@ export default ({ tags, title, from, to, affiliation, children }) => {
         </Col>
       </Row>
       {tags.map((tag) => (
-        <Badge key={tag} pill variant="secondary" className="px-2 mr-1">
-          {tag}
-        </Badge>
+        <Fragment>
+          <Badge key={tag} pill bg="secondary" className="px-2 mr-1">
+            {tag}
+          </Badge>
+          {' '}
+        </Fragment>
       ))}
       <div style={{ marginTop: '1 rem' }}></div>
       <article className="m-auto pt-2 text-justify">{children}</article>

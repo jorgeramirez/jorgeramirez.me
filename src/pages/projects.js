@@ -23,7 +23,7 @@ export default () => {
               running controlled crowdsourcing experiments. To implement the initial version of the platform, I
               supervised two bachelor students that were in charge of implementing CrowdHub's backend and frontend.
             </p>
-            <div>
+            <div style={{ textAlign: 'left' }}>
               <a href="https://github.com/TrentoCrowdAI/crowdhub-web" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={['fab', 'github']}
@@ -47,7 +47,7 @@ export default () => {
               citation screening using crowdsourcing. During this work, I also supervised two bachelor students in
               designing and implementing the reporting module.
             </p>
-            <div>
+            <div style={{ textAlign: 'left' }}>
               <a href="https://github.com/TrentoCrowdAI/crowdai" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={['fab', 'github']}
@@ -71,7 +71,7 @@ export default () => {
               check what are the country’s expenses. Worked with several department directors to understand their
               portion of the system and database, leading to the release of 8 new datasets and visualizations.
             </p>
-            <div>
+            <div style={{ textAlign: 'left' }}>
               <a href="https://datos.hacienda.gov.py/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={['fas', 'globe']}
@@ -94,7 +94,7 @@ export default () => {
               Implemented the new version of the frontend, evolving the initial (monolithic) jQuery-based prototype to a
               component-based architecture using AngularJS.
             </p>
-            <div>
+            <div style={{ textAlign: 'left' }}>
               <a href="https://github.com/socialappslab/appcivist-pb-client" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={['fab', 'github']}
@@ -117,7 +117,7 @@ export default () => {
               Led a team of 3 developers to build a system that regularly crawls the website from 300+ public
               institutions, ensuring these publish required documents, and offers a dashboard for monitoring.
             </p>
-            <div>
+            <div style={{ textAlign: 'left' }}>
               <a
                 href="https://informacionpublica.paraguay.gov.py/portal/#!/transparencia_activa"
                 target="_blank"
@@ -144,7 +144,7 @@ export default () => {
               Led a team of 2 developers to create a portal for the Ministry of Information Technologies that allows 7+
               million citizens to request documents from public institutions.
             </p>
-            <div>
+            <div style={{ textAlign: 'left' }}>
               <a href="https://informacionpublica.paraguay.gov.py/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={['fas', 'globe']}
