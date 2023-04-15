@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Img from "gatsby-image"
+import Img from "gatsby-plugin-image"
 import { Container, Badge, Col, Row } from "react-bootstrap"
 
 export default ({ excerpt, featuredImages, tags, title, to }) => {

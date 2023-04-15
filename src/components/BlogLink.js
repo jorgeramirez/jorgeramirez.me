@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Img from "gatsby-image"
+import Img from "gatsby-plugin-image"
 import Card from "react-bootstrap/Card"
 
 export default props => {

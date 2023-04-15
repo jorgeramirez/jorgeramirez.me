@@ -1,11 +1,7 @@
 /**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
+ * @type {import('gatsby').GatsbyConfig}
  */
-
 module.exports = {
-  /* Your site config here */
   siteMetadata: {
     title: `Jorge Ramírez`,
     author: `Jorge Ramírez`,
@@ -53,7 +49,6 @@ module.exports = {
     ]
   },
   plugins: [
-    `gatsby-plugin-preload-link-crossorigin`,
     `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -80,7 +75,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
