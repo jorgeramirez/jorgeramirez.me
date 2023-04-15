@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{vx99:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),i=n.n(a);t.default=function(){return i.a.createElement("div",{style:{display:"flex",alignContent:"center",margin:"3rem auto",justifyContent:"space-around"}},i.a.createElement("div",null,i.a.createElement("iframe",{src:"/blog/index.html",title:"blog"})))}}}]);
-//# sourceMappingURL=component---src-pages-blog-js-053b6abc59ea6bec22c7.js.map
