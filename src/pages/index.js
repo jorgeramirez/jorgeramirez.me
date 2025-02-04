@@ -40,10 +40,10 @@ export default ({ data }) => {
 
           <div className="profile-info">
             <div style={{ lineHeight: 1.2 }} className="info">
-            <p style={{ marginBottom: 0 }}>
-                <span style={{ fontSize: '1.15rem' }}>Software Engineer, ML Platform</span>{' '}
-                <a href="https://glovoapp.com/" target="_blank" rel="noopener noreferrer">
-                  @ Glovo
+              <p style={{ marginBottom: 0 }}>
+                <span style={{ fontSize: '1.15rem' }}>Senior Software Engineer, i18n Platform</span>{' '}
+                <a href="https://stripe.com/" target="_blank" rel="noopener noreferrer">
+                  @ Stripe
                 </a>
                 .
               </p>
